@@ -1,7 +1,7 @@
 This folder contains the supporting materials for the paper Two-dimensional data examination by exploratory functional data analysis to improve detection of scattered soil contamination by Cu-bearing pesticides (Matys Grygar et al., 2026).
 The folder contains:
 
-    - review_code.R: the file to reproduce figures from the paper;
+    - 2D_EFDA_code.R: the file to reproduce figures from the paper;
     
     - Initially_proc_data.csv: .csv file with the raw underlying data;
     
