@@ -9,7 +9,7 @@
 #########
 ### initial setting
 #########
-setwd("C:/Users/Ivana/Desktop/OneDrive - Univerzita Palackého v Olomouci/p h d/Karel/Densities_new2/Densities/Standa_05_2025")
+#setwd("")
 
 library(class)
 library(cluster)
@@ -59,8 +59,6 @@ dev.off()
 ###############
 ### FIGURE 5
 
-setwd("C:/Users/Ivana/Desktop/OneDrive - Univerzita Palackého v Olomouci/p h d/Karel/Densities_new2/Densities/Standa_05_2025")
-
 overall_coeffs=list()
 {
   overall_coeffs[[1]]=usti_nad_orlici=as.matrix(read.csv("B_overall_usti_nad_orlici.csv",header=F,sep=";",dec=","))
@@ -107,7 +105,6 @@ dev.off()
 
 ###############
 ### FIGURE 8
-setwd("C:/Users/Ivana/Desktop/OneDrive - Univerzita Palackého v Olomouci/p h d/Karel/Densities_new2/Densities/regrese_06_2025")
 
 data=read.csv2("Initially_proc_data.csv",header=T,dec=",",sep=";")
 data[,1]=as.factor(data[,1])
@@ -145,7 +142,6 @@ dev.off()
 
 ###############
 ### FIGURE 9
-setwd("C:/Users/Ivana/Desktop/OneDrive - Univerzita Palackého v Olomouci/p h d/Karel/Densities_new2/Densities/Standa_05_2025")
 b_coef_Cu=as.matrix(read.csv2("B_Cu_geometric.csv",header=F))
 
 rownames(b_coef_Cu)=t(abbr77)
@@ -165,4 +161,5 @@ HM_fig9=heatmap.2(Cu_ge,col = rgb.palette(100), key=T,keysize=1,density.info="no
           breaks=quant, trace="none",cexCol=0.8,cexRow=0.4, scale = "none",
           Colv=FALSE,main="Cu - geometric marginals", dendrogram="row",
           labCol=round(exp(t.fine),1),xlab="Cu(mg kg-1)",labRow = abbr77)
+
 
