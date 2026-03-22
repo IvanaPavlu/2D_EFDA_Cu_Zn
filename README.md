@@ -32,6 +32,7 @@ To reproduce the figures from the paper:
 2. Open R and set working directory to the project root.
 
 3. Install required packages (see below).
+   install.packages(c("class","cluster","fda","gplots","robustbase","splines2")
 
 4. Run:
    source("review_code.R")
