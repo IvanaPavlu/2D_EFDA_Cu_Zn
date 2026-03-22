@@ -22,4 +22,18 @@ The knots for the analysis were chosen equidistantly over the marginal domains.
 
 To produce a minimal reproducible example, please go to https://github.com/skorst01/Bivariate-Compositional-Splines where you can find raw data for individual districts, or create your own subset of data from Initially_proc_data.csv.
 
+## Reproducibility
+
+To reproduce the figures from the paper:
+
+1. Clone the repository:
+   git clone <repo-url>
+
+2. Open R and set working directory to the project root.
+
+3. Install required packages (see below).
+
+4. Run:
+   source("review_code.R")
+
 
